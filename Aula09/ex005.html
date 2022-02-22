@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos</title>
+    <style>
+        body {
+            background-color: rgb(69, 163, 245);
+            font: normal 16pt arial;
+            color: aliceblue;
+        }
+
+
+    </style>
+</head>
+<body> 
+    <h2>Iniciando estudos com DOM</h2>
+    <p>Qualquer coisa</p>
+    <p class= 'par1'>Aqui vai o resultado</p>
+    <p name = "par2">Aprendendo uso o <strong>DOM</strong> em JavaScrips.</p>
+    <div id="msg">Clique em mim</div>
+
+    <script>
+        var a = window.document.getElementsByClassName('par1')[0]
+        a.style.background = 'black'
+        window.document.getElementsByName('par2')[0].style.background = 'green'
+        window.document.getElementById('msg').style.color = 'purple'
+
+
+        </script>
+    
+</body>
+</html>
