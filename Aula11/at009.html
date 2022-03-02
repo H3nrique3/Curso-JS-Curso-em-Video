@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naturalidade</title>
+</head>
+<body>
+    <h1>Qual sua naturalidade</h1>
+    <div id = "res">
+
+    </div>
+    <input type="text" name="pais" id="pais">
+    <input type="button" value="verificar" onclick="verificar()">
+        <script>
+            function verificar (){
+                var pais = document.querySelector ('input#pais')
+                var res = document.querySelector ('div#res')
+                var a = document.querySelector ('a')
+
+            res.innerHTML = `Morando em ${pais.value}.</br>`
+            if(pais.value == "Brasil") {
+                res.innerHTML = `Você é brasileiro`
+            }
+            else{
+            res.innerHTML = `Você é estrangeiro`
+            }
+
+                        }
+        </script>
+</body>
+</html>
